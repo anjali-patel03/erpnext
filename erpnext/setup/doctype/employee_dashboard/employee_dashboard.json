@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2025-05-19 16:48:39.872556",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "welcome_section",
+  "employee",
+  "connections_tab",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_employee_dashboard"
+ ],
+ "fields": [
+  {
+   "fieldname": "welcome_section",
+   "fieldtype": "Section Break",
+   "label": "Welcome"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "connections_tab",
+   "fieldtype": "Tab Break",
+   "label": "Connections",
+   "show_dashboard": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Employee Dashboard"
+  },
+  {
+   "fieldname": "parent_employee_dashboard",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Employee Dashboard",
+   "options": "Employee Dashboard"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details",
+   "show_dashboard": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2025-05-20 11:53:36.617098",
+ "modified_by": "Administrator",
+ "module": "Setup",
+ "name": "Employee Dashboard",
+ "naming_rule": "Set by user",
+ "nsm_parent_field": "parent_employee_dashboard",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee",
+ "track_changes": 1
+}
