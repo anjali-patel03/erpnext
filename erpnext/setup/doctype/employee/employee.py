@@ -78,6 +78,7 @@ class Employee(NestedSet):
 		lft: DF.Int
 		marital_status: DF.Literal["", "Single", "Married", "Divorced", "Widowed"]
 		middle_name: DF.Data | None
+		monthly_grace_count: DF.Int
 		naming_series: DF.Literal["HR-EMP-"]
 		new_workplace: DF.Data | None
 		notice_number_of_days: DF.Int
